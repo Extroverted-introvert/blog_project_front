@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+.greeting-image-div > * {
+    max-width: 100%;
+    height: auto;
+  }
+
+.home-image-div {
+    width: 15em;
+    margin: 0 auto;
+  }
+.home-text-div {
+  text-align: center;
+}

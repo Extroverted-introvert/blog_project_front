@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Agustina Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Agustina Regular"),
+      url("./assets/fonts/Agustina.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+      url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Google Sans Bold";
+    src: local("Google Sans Bold"),
+      url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Google Sans Bold Italic";
+    src: local("Google Sans Bold Italic"),
+      url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Google Sans Italic";
+    src: local("Google Sans Italic"),
+      url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Goofle Sans Regular";
+    src: local("Goofle Sans Regular"),
+      url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Goofle Sans Regular Italic";
+    src: local("Goofle Sans Regular Italic"),
+      url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Google Sans Regular";
+    src: local("Google Sans Regular"),
+      url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    align-items: center;
+    background: linear-gradient(to right, #EDF9FE, #FEFAF9);
+    color:#001C55;
+  }
+  /* Media Query */
+  @media (max-width: 1380px) {
+    html,
+    body {
+      font-size: 16px;
+      line-height: normal;
+    }
+  }
