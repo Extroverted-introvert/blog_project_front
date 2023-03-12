@@ -7,7 +7,7 @@ import TopButton from '../topButton/TopButton.js';
 import HomeImg from './HomeImg.js';
 import './Home.css';
 
-const home = () => (
+const Home = () => (
     <Fade top duration={1000} distance="20px">
     < Navbar />
     <div className='w-container'>
@@ -29,4 +29,4 @@ const home = () => (
     </Fade>
 );
 
-export default home;
+export default Home;
