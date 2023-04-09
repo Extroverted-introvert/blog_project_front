@@ -47,7 +47,7 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
-                  <Link className="btn btn-primary btn-lg" to={{ pathname: "mailto:parth.tripathi17@gmail.com" }} target="_blank" role="button">Drop a mail</Link>
+                  <a className="btn btn-primary btn-lg" href="mailto:parth.tripathi17@gmail.com" target="_blank" role="button">Drop a mail</a>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ class Contact extends Component {
                   Checkout my Portfolio to check my Skills and Accomplishments
                 </p>
                 <div className="blogsite-btn-div">
-                  <Link className="btn btn-primary btn-lg" to={{ pathname: "https://parthtripathi.netlify.app" }} target="_blank" role="button">Portfolio Website</Link>
+                  <a className="btn btn-primary btn-lg" href="https://parthtripathi.netlify.app" target="_blank" role="button">Portfolio Website</a>
                 </div>
               </div>
               <div className="blog-heading-img-div">
@@ -91,7 +91,7 @@ class Contact extends Component {
                   className="contact-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  Indore, Madhya Pradesh - 452009
+                  Inarimae, Tsukuba, Ibaraki, Japan - 305-0061
                 </p>
                 <h1
                   className="address-heading-text"
@@ -103,10 +103,10 @@ class Contact extends Component {
                   className="contact-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  +91 9981915424
+                  +91-9981915424, +81-7084508970
                 </p>
                 <div className="address-btn-div">
-                  <Link className="btn btn-primary btn-lg" to={{ pathname: "https://goo.gl/maps/EhF6g51Z3UTmJ8Xe8" }} target="_blank" role="button">Visit on Google Maps</Link>
+                  <a className="btn btn-primary btn-lg" href="https://www.google.com/maps/place/Inarimae,+Tsukuba,+Ibaraki+305-0061/@36.0497515,140.1253759,17z/data=!3m1!4b1!4m15!1m8!3m7!1s0x60227334a0384159:0x33af88308936c296!2z44CSMzA1LTAwNjEgSWJhcmFraSwgVHN1a3ViYSwgSW5hcmltYWUsIDE34oiSNiDmsrzlsLvjg4_jgqTjg4QgQQ!3b1!8m2!3d36.0490802!4d140.1265892!16s%2Fg%2F11d_46dny1!3m5!1s0x6022733346a51e95:0xfd368ea7d072c2d2!8m2!3d36.0495565!4d140.1279447!16s%2Fg%2F121tncz7" target="_blank" role="button">Visit on Google Maps</a>
                 </div>
               </div>
             </div>

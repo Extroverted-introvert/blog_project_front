@@ -20,7 +20,7 @@ const Home = () => (
                 <p className="lead">An awesome blog were I spread info/rant about various topics.</p>
                 <hr className="my-4" />
                 <p>Check it out for my insights on various technical topics, fun tutorials, and other miscellanous stuff</p>
-            <Link className="btn btn-primary btn-lg" to={{ pathname: "https://parthtripathi.netlify.app" }} target="_blank" role="button">Check out my Portfolio</Link>
+            <a className="btn btn-primary btn-lg" target="_blank" role="button" href={'https://parthtripathi.netlify.app'}>Check out my Portfolio</a>
             </div>
         </div>
     </div>

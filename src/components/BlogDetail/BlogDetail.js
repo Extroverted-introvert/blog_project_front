@@ -58,7 +58,7 @@ const BlogDetail = (props) => {
         <div className='w-container mt-3' 
         style={{ backgroundImage: `url("https://pixabay.com/get/g51e212c796934491ebadf69d97f01c77524690a81365707edc07de5fd1b5a32ef72411aae7b0e59225bf3f1ade2c012bc6c2ea500e7501fe822ff0210bb685247b13530ca9446cb641bd79f6594b6371_1920.jpg")` }}
         >
-            <h1 className='display-2 text-center'>{blog.title}</h1>
+            <h1 className='display-4 text-center'>{blog.title}</h1>
             <h2 className='text-muted text-center'>Category: {capitalizeFirstLetter(blog.category)}</h2>
             <h4 className='text-center'>{getParsedDate(blog.date_created)}</h4>
             <div className='mt-5 mb-5 ml-5 mr-5' dangerouslySetInnerHTML={createBlog()} />
