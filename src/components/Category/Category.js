@@ -6,6 +6,22 @@ import Navbar from './../Navbar/Navbar.js';
 import Footer from './../footer/Footer.js';
 import TopButton from '../topButton/TopButton.js';
 
+const getMonthName = (monthNumber) => {
+    const date = new Date();
+    date.setMonth(monthNumber - 1);
+  
+    return date.toLocaleString('en-US', { month: 'long' });
+  }
+
+const getParsedDate = (timestamp) => {
+    const dateFormat = new Date(timestamp);
+  
+    return (
+    getMonthName(dateFormat.getMonth()+1)+
+    ", "+dateFormat.getFullYear()
+    );;
+  }
+
 const Category = (props) => {
     const [blogs, setBlogs] = useState([]);
     const [currentCategory, setCurrentCategory] = useState('');
@@ -53,12 +69,12 @@ const Category = (props) => {
                     <div className="col p-4 d-flex flex-column position-static">
                         <strong className="d-inline-block mb-2 text-primary">{capitalizeFirstLetter(blogPost.category)}</strong>
                         <h3 className="mb-0">{blogPost.title}</h3>
-                        <div className="mb-1 text-muted">{blogPost.month} {blogPost.day}</div>
+                        <div className="mb-1 text-muted">{getParsedDate(blogPost.date_created)}</div>
                         <p className="card-text mb-auto">{blogPost.excerpt}</p>
                         <Link to={`/blog/${blogPost.slug}`} className="stretched-link">Continue reading</Link>
                     </div>
                     <div className="col-auto d-none d-lg-block">
-                        <img width='200' height='250' src={blogPost.thumbnail} alt='thumbnail' />
+                        <img width='200' height='200' src={blogPost.thumbnail} alt='thumbnail' />
                     </div>
                 </div>
             );
